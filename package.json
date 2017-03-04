@@ -1,10 +1,11 @@
 {
   "name": "ptz-core-domain",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Polutz Core Domain.",
+  "main": "dist/index.js",
   "scripts": {
     "mocha": "mocha ./dist/**/*.js --compilers js:babel-core/register --require babel-polyfill",
-    "pretest": "gulp js && node gensalt.js",
+    "pretest": "gulp js",
     "test": "nyc npm run mocha && nyc report --reporter=text-lcov > coverage.lcov && codecov --token=cbef0920-fdc4-4cc3-8d52-51a0298afea3"
   },
   "repository": {
@@ -20,7 +21,6 @@
   "dependencies": {
     "babel-loader": "^6.2.10",
     "bcryptjs": "^2.4.3",
-    "dotenv": "^4.0.0",
     "ptz-assert": "^1.2.0",
     "shortid": "^2.2.6"
   },
