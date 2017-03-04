@@ -23,6 +23,7 @@ declare module ptzCoreDomain {
         isValid(): boolean;
         throwErrorIfIsInvalid(): void;
     }
+    export function validateEmail(email): boolean;
 }
 declare module "ptz-core-domain"
 {

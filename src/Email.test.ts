@@ -8,4 +8,4 @@ describe('Email', function () {
     it('Invalid Email', function(){
         notOk(validateEmail('alanmarcelllive.com'));
     });
-})
+});

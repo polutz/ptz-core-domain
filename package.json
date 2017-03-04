@@ -1,6 +1,6 @@
 {
   "name": "ptz-core-domain",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Polutz Core Domain.",
   "scripts": {
     "mocha": "mocha ./dist/**/*.js --compilers js:babel-core/register --require babel-polyfill",
