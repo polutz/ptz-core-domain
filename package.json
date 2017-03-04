@@ -20,7 +20,6 @@
   "homepage": "https://github.com/polutz/ptz-core-domain#readme",
   "dependencies": {
     "babel-loader": "^6.2.10",
-    "bcryptjs": "^2.4.3",
     "ptz-assert": "^1.2.0",
     "shortid": "^2.2.6"
   },
