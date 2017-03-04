@@ -25,7 +25,6 @@
 ## Setup
 ```
     npm install   
-    node gensalt.js
 ```
 
 ## Test
