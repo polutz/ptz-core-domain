@@ -1,0 +1,22 @@
+{
+"compilerOptions": {
+    "noImplicitAny": false,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "target": "ES6",
+    "sourceMap": true,
+    "listFiles": false,
+    "outDir": "dist/",
+    "allowSyntheticDefaultImports": true	
+  },
+  "include": [
+    "typings/**/*.d.ts",
+    "src/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.test.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
+

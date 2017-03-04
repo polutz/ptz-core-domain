@@ -1,0 +1,48 @@
+{
+  "name": "ptz-core-domain",
+  "version": "1.0.0",
+  "description": "Polutz Core Domain.",
+  "scripts": {
+    "mocha": "mocha ./dist/**/*.js --compilers js:babel-core/register --require babel-polyfill",
+    "pretest": "gulp js && node gensalt.js",
+    "test": "nyc npm run mocha && nyc report --reporter=text-lcov > coverage.lcov && codecov --token=cbef0920-fdc4-4cc3-8d52-51a0298afea3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polutz/ptz-core-domain.git"
+  },
+  "author": "angeloocana.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polutz/ptz-core-domain/issues"
+  },
+  "homepage": "https://github.com/polutz/ptz-core-domain#readme",
+  "dependencies": {
+    "babel-loader": "^6.2.10",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^4.0.0",
+    "ptz-assert": "^1.2.0",
+    "shortid": "^2.2.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.21.0",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-es2015": "^6.18.0",
+    "codecov": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-typescript": "^3.1.4",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mocha-lcov-reporter": "^1.2.0",
+    "nyc": "^10.1.2",
+    "sinon": "^1.17.7",
+    "typescript": "^2.1.6",
+    "typings": "^2.1.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
