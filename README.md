@@ -14,7 +14,9 @@ Nessa camada de Domínio (Domain), a ideia é utilizar o minimo possível de dep
 tentando ficar ao máximo com javascript puro.
 
 Core Domain: https://github.com/polutz/ptz-core-domain
+
 User Domain: https://github.com/polutz/ptz-user-domain
+
 User Repository: https://github.com/polutz/ptz-user-repository
 
 Projeto que utiliza os modulos acima: https://github.com/angeloocana/freecomclub
