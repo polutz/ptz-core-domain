@@ -25,4 +25,48 @@ describe('EntityMinBase', function () {
             (0, _ptzAssert.equal)(entity.id, id);
         });
     });
+    describe('Errors', function () {
+        it('should addError when errors is null', function () {
+            var errorKey = 'ERROR_';
+            var entity = new _EntityMinBase2.default({ errors: null });
+            entity.addError(errorKey);
+            (0, _ptzAssert.contains)(entity.errors, errorKey);
+        });
+        it('should addError when errors exists', function () {
+            var errorKey = 'ERROR_';
+            var entity = new _EntityMinBase2.default({ errors: ['ERROR_ANOTHER_ERROR'] });
+            entity.addError(errorKey);
+            (0, _ptzAssert.contains)(entity.errors, errorKey);
+        });
+    });
+    describe('IsValid', function () {
+        it('should return true when errors is null', function () {
+            var entity = new _EntityMinBase2.default({ errors: null });
+            (0, _ptzAssert.ok)(entity.isValid());
+        });
+        it('should return true when error is empty', function () {
+            var entity = new _EntityMinBase2.default({ errors: [] });
+            (0, _ptzAssert.ok)(entity.isValid());
+        });
+        it('should return false when there are errors', function () {
+            var entity = new _EntityMinBase2.default({ errors: ['ERROR_ANOTHER_ERROR'] });
+            (0, _ptzAssert.notOk)(entity.isValid());
+        });
+    });
+    describe('throwErrorIfIsInvalid', function () {
+        it('should not throw error when errors is null', function () {
+            var entity = new _EntityMinBase2.default({ errors: null });
+            entity.throwErrorIfIsInvalid();
+        });
+        it('should not throw error when errors is empty', function () {
+            var entity = new _EntityMinBase2.default({ errors: [] });
+            entity.throwErrorIfIsInvalid();
+        });
+        it('should throw error when there are errors', function () {
+            var entity = new _EntityMinBase2.default({ errors: ['ERROR_ANOTHER_ERROR'] });
+            (0, _ptzAssert.throws)(function () {
+                entity.throwErrorIfIsInvalid();
+            });
+        });
+    });
 });
