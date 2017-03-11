@@ -46,6 +46,13 @@ Tools: Docker, Typescript, babel, webpack, mocha, gulp.
     typings install dt~mocha --global --save
 ```
 
+*Add to your typings/index.d.ts
+
+```ts
+/// <reference path="../node_modules/ptz-assert/src/typings/index.d.ts" />
+```
+
+
 ## Setup
 ```
     npm install   
