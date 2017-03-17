@@ -1,9 +1,17 @@
-import {validateEmail} from './Email';
-import EntityMinBase from './EntityMinBase';
+import { validateEmail } from './Email';
 import EntityBase from './EntityBase';
+import EntityMinBase from './EntityMinBase';
+import { ICreatedBy } from './ICreatedBy';
+import { IEntityBase, IEntityBaseArgs } from './IEntityBase';
+import { IEntityMinBase, IEntityMinBaseArgs } from './IEntityMinBase';
 
-export{
+export {
     validateEmail,
     EntityBase,
-    EntityMinBase
+    EntityMinBase,
+    ICreatedBy,
+    IEntityMinBase,
+    IEntityMinBaseArgs,
+    IEntityBase,
+    IEntityBaseArgs
 }

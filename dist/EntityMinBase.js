@@ -30,20 +30,20 @@ var EntityMinBase = function () {
             this.errors.push(error);
         }
     }, {
-        key: 'setId',
-        value: function setId(entity) {
-            this.id = entity.id || entity._id;
-            if (!this.id) this.id = _shortid2.default.generate();
-        }
-    }, {
         key: 'isValid',
         value: function isValid() {
-            return !this.errors || this.errors.length == 0;
+            return !this.errors || this.errors.length === 0;
         }
     }, {
         key: 'throwErrorIfIsInvalid',
         value: function throwErrorIfIsInvalid() {
             if (this.errors && this.errors.length > 0) throw 'ERROR_INVALID_ENTITY';
+        }
+    }, {
+        key: 'setId',
+        value: function setId(entity) {
+            this.id = entity.id || entity._id;
+            if (!this.id) this.id = _shortid2.default.generate();
         }
     }]);
 

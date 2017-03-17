@@ -1,4 +1,4 @@
-interface ICreatedBy{
+export interface ICreatedBy {
     userId: string;
     userName: string;
     name: string;

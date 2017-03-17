@@ -1,23 +1,23 @@
+import { contains, equal, notEmptyString, notOk, ok, throws } from 'ptz-assert';
 import EntityMinBase from './EntityMinBase';
-import { throws, notOk, ok, contains, notEmptyString, equal } from 'ptz-assert';
 
-describe('EntityMinBase', ()=>{
+describe('EntityMinBase', () => {
 
-    describe('Id', ()=>{
-        it('Generate Id',()=>{
-            var entity = new EntityMinBase({}); 
+    describe('Id', () => {
+        it('Generate Id', () => {
+            const entity = new EntityMinBase({});
             notEmptyString(entity.id);
         });
 
-        it('Set _id to id',()=>{
-            var id = "sdfds-sdfd-gfdg-33";
-            var entity = new EntityMinBase({_id: id}); 
+        it('Set _id to id', () => {
+            const id = 'sdfds-sdfd-gfdg-33';
+            const entity = new EntityMinBase({ _id: id });
             equal(entity.id, id);
         });
 
-        it('Set id',()=>{
-            var id = "sdfds-sdfd-gfdg-33";
-            var entity = new EntityMinBase({id: id}); 
+        it('Set id', () => {
+            const id = 'sdfds-sdfd-gfdg-33';
+            const entity = new EntityMinBase({ id });
             equal(entity.id, id);
         });
     });
@@ -69,7 +69,7 @@ describe('EntityMinBase', ()=>{
         it('should throw error when there are errors', () => {
             var entity = new EntityMinBase({ errors: ['ERROR_ANOTHER_ERROR'] });
             throws(() => {
-                entity.throwErrorIfIsInvalid()
+                entity.throwErrorIfIsInvalid();
             });
         });
     });

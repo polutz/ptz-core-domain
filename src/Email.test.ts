@@ -1,11 +1,11 @@
+import { notOk, ok } from 'ptz-assert';
 import { validateEmail } from './Email';
-import { ok, notOk } from 'ptz-assert';
 
-describe('Email', function () {
-    it('Valid Email', function () {
+describe('Email', () => {
+    it('Valid Email', () => {
         ok(validateEmail('alanmarcell@live.com'));
     });
-    it('Invalid Email', function(){
+    it('Invalid Email', () => {
         notOk(validateEmail('alanmarcelllive.com'));
     });
 });

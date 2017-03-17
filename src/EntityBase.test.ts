@@ -1,10 +1,11 @@
+import { equal, ok } from 'ptz-assert';
 import EntityBase from './EntityBase';
-import { ok, equal } from 'ptz-assert';
+import { IEntityBaseArgs } from './IEntityBase';
 
 describe('EntityBase', () => {
     it('should set createdBy', () => {
-        var args:IEntityBaseArgs = { 
-            createdBy: { 
+        var args: IEntityBaseArgs = {
+            createdBy: {
                 userName: 'allanegidio',
                 name: 'Allan Egidio',
                 dtCreated: new Date(),
@@ -18,7 +19,7 @@ describe('EntityBase', () => {
     });
 
     it('should set dtChanged', () => {
-        var args:IEntityBaseArgs = {
+        var args: IEntityBaseArgs = {
             dtChanged: new Date()
         };
 

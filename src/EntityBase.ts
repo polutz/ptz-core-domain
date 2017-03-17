@@ -1,12 +1,14 @@
 import EntityMinBase from './EntityMinBase';
+import { ICreatedBy } from './ICreatedBy';
+import { IEntityBase, IEntityBaseArgs } from './IEntityBase';
 
-export default class EntityBase extends EntityMinBase implements IEntityBase{
+export default class EntityBase extends EntityMinBase implements IEntityBase {
 
-    createdBy:ICreatedBy;
-    dtChanged:Date;
+    createdBy: ICreatedBy;
+    dtChanged: Date;
 
-    constructor(entity:IEntityBaseArgs){        
-        if(!entity)
+    constructor(entity: IEntityBaseArgs) {
+        if (!entity)
             entity = {};
 
         super(entity);
@@ -15,4 +17,3 @@ export default class EntityBase extends EntityMinBase implements IEntityBase{
         this.dtChanged = entity.dtChanged;
     }
 }
-

@@ -1,10 +1,10 @@
 'use strict';
 
+var _ptzAssert = require('ptz-assert');
+
 var _EntityBase = require('./EntityBase');
 
 var _EntityBase2 = _interopRequireDefault(_EntityBase);
-
-var _ptzAssert = require('ptz-assert');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 

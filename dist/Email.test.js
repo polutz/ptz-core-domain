@@ -1,8 +1,8 @@
 'use strict';
 
-var _Email = require('./Email');
-
 var _ptzAssert = require('ptz-assert');
+
+var _Email = require('./Email');
 
 describe('Email', function () {
     it('Valid Email', function () {
