@@ -30,10 +30,6 @@ Metodologias: TDD (Test Driven Development), DDD (Domain Driven Design).
 Tools: Docker, Typescript, babel, webpack, mocha, gulp.
 
 
-## Prerequisites
-
-1. Latest version of Node to be installed.
-
 ## NPM Global packages
 ```
     npm install ts-node -g
@@ -45,13 +41,6 @@ Tools: Docker, Typescript, babel, webpack, mocha, gulp.
 ```
     typings install dt~mocha --global --save
 ```
-
-*Add to your typings/index.d.ts
-
-```ts
-/// <reference path="../node_modules/ptz-assert/src/typings/index.d.ts" />
-```
-
 
 ## Setup
 ```
