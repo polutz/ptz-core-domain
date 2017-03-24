@@ -1,4 +1,4 @@
-import { contains, equal, notEmptyString, notOk, ok, throws } from 'ptz-assert';
+import { contains, containsNTimes, equal, notEmptyString, notOk, ok, throws } from 'ptz-assert';
 import EntityMinBase from './EntityMinBase';
 
 describe('EntityMinBase', () => {
@@ -22,19 +22,28 @@ describe('EntityMinBase', () => {
         });
     });
 
-    describe('Errors', () => {
-        it('should addError when errors is null', () => {
+    describe('addError', () => {
+        it('do not throw error when args.errors is null', () => {
             const errorKey = 'ERROR_';
             var entity = new EntityMinBase({ errors: null });
             entity.addError(errorKey);
             contains(entity.errors, errorKey);
         });
 
-        it('should addError when errors exists', () => {
+        it('add errors from args.errors', () => {
             const errorKey = 'ERROR_';
-            var entity = new EntityMinBase({ errors: ['ERROR_ANOTHER_ERROR'] });
+            const errorArgsKey = 'ERROR_ANOTHER_ERROR';
+            var entity = new EntityMinBase({ errors: [errorArgsKey] });
             entity.addError(errorKey);
+            contains(entity.errors, errorArgsKey);
             contains(entity.errors, errorKey);
+        });
+
+        it('does not duplicate errors', () => {
+            const errorKey = 'ERROR_';
+            var entity = new EntityMinBase({ errors: [errorKey] });
+            entity.addError(errorKey);
+            containsNTimes(entity.errors, errorKey, 1);
         });
     });
 

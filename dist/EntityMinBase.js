@@ -27,7 +27,7 @@ var EntityMinBase = function () {
         key: 'addError',
         value: function addError(error) {
             if (!this.errors) this.errors = [];
-            this.errors.push(error);
+            if (!(this.errors.indexOf(error) >= 0)) this.errors.push(error);
         }
     }, {
         key: 'isValid',

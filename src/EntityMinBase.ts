@@ -18,7 +18,8 @@ export default class EntityMinBase implements IEntityMinBase {
         if (!this.errors)
             this.errors = [];
 
-        this.errors.push(error);
+        if (!(this.errors.indexOf(error) >= 0))
+            this.errors.push(error);
     }
 
     isValid(): boolean {

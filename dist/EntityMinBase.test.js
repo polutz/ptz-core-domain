@@ -25,18 +25,26 @@ describe('EntityMinBase', function () {
             (0, _ptzAssert.equal)(entity.id, id);
         });
     });
-    describe('Errors', function () {
-        it('should addError when errors is null', function () {
+    describe('addError', function () {
+        it('do not throw error when args.errors is null', function () {
             var errorKey = 'ERROR_';
             var entity = new _EntityMinBase2.default({ errors: null });
             entity.addError(errorKey);
             (0, _ptzAssert.contains)(entity.errors, errorKey);
         });
-        it('should addError when errors exists', function () {
+        it('add errors from args.errors', function () {
             var errorKey = 'ERROR_';
-            var entity = new _EntityMinBase2.default({ errors: ['ERROR_ANOTHER_ERROR'] });
+            var errorArgsKey = 'ERROR_ANOTHER_ERROR';
+            var entity = new _EntityMinBase2.default({ errors: [errorArgsKey] });
             entity.addError(errorKey);
+            (0, _ptzAssert.contains)(entity.errors, errorArgsKey);
             (0, _ptzAssert.contains)(entity.errors, errorKey);
+        });
+        it('does not duplicate errors', function () {
+            var errorKey = 'ERROR_';
+            var entity = new _EntityMinBase2.default({ errors: [errorKey] });
+            entity.addError(errorKey);
+            (0, _ptzAssert.containsNTimes)(entity.errors, errorKey, 1);
         });
     });
     describe('IsValid', function () {
