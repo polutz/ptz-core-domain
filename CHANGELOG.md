@@ -2,6 +2,10 @@
 
 
 
+## 1.1.6 (March 29, 2017)
+
+* Exports IBaseRepository
+
 ## 1.1.5 (March 29, 2017)
 
 * Add IBaseRepository
