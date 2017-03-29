@@ -1,6 +1,6 @@
 import { IEntityMinBase } from './IEntityMinBase';
 
-interface IBaseRepository<T> {
+interface IBaseRepository {
     collectionName: string;
     db;
 
