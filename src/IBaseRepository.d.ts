@@ -1,16 +1,16 @@
 import { IEntityMinBase } from './IEntityMinBase';
 
-interface IBaseRepository {
+interface IBaseRepository<T> {
     collectionName: string;
     db;
 
     getDbCollection();
 
-    save(entity: IEntityMinBase): Promise<IEntityMinBase>;
+    save(entity: T & IEntityMinBase): Promise<T & IEntityMinBase>;
 
-    getById(id: string): Promise<IEntityMinBase>;
+    getById(id: string): Promise<T & IEntityMinBase>;
 
-    getByIds(ids: string[]): Promise<IEntityMinBase[]>;
+    getByIds(ids: string[]): Promise<T & IEntityMinBase[]>;
 
-    find(query: any, options: { limit: number }): Promise<IEntityMinBase[]>;
+    find(query: any, options: { limit: number }): Promise<T & IEntityMinBase[]>;
 }
