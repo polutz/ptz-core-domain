@@ -1,5 +1,8 @@
 ## master
 
+## 1.1.8 (..., 2017)
+
+* Move BaseRepositoryFake to ptz-core-app
 
 ## 1.1.7 (March 30, 2017)
 

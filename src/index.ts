@@ -1,4 +1,3 @@
-import BaseRepositoryFake from './BaseRepositoryFake';
 import { validateEmail } from './Email';
 import EntityBase from './EntityBase';
 import EntityMinBase from './EntityMinBase';
@@ -16,6 +15,5 @@ export {
     IEntityMinBaseArgs,
     IEntityBase,
     IEntityBaseArgs,
-    IBaseRepository,
-    BaseRepositoryFake
+    IBaseRepository
 }
