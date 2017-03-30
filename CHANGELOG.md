@@ -1,6 +1,9 @@
 ## master
 
 
+## 1.1.7 (March 30, 2017)
+
+* Add BaseRepositoryFake in order to stub/mock tests
 
 ## 1.1.6 (March 29, 2017)
 
