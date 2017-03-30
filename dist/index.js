@@ -3,7 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.EntityMinBase = exports.EntityBase = exports.validateEmail = undefined;
+exports.BaseRepositoryFake = exports.EntityMinBase = exports.EntityBase = exports.validateEmail = undefined;
+
+var _BaseRepositoryFake = require('./BaseRepositoryFake');
+
+var _BaseRepositoryFake2 = _interopRequireDefault(_BaseRepositoryFake);
 
 var _Email = require('./Email');
 
@@ -20,3 +24,4 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.validateEmail = _Email.validateEmail;
 exports.EntityBase = _EntityBase2.default;
 exports.EntityMinBase = _EntityMinBase2.default;
+exports.BaseRepositoryFake = _BaseRepositoryFake2.default;
