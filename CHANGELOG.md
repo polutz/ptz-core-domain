@@ -1,5 +1,9 @@
 ## master
 
+## 1.1.9 (..., 2017)
+
+* Fix IBaseRepository returns for getByIds and find
+
 ## 1.1.8 (March 30, 2017)
 
 * Add Generics to IBaseRepository

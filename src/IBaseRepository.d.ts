@@ -10,7 +10,7 @@ interface IBaseRepository<T> {
 
     getById(id: string): Promise<T & IEntityMinBase>;
 
-    getByIds(ids: string[]): Promise<T & IEntityMinBase[]>;
+    getByIds(ids: string[]): Promise<T[] & IEntityMinBase[]>;
 
-    find(query: any, options: { limit: number }): Promise<T & IEntityMinBase[]>;
+    find(query: any, options: { limit: number }): Promise<T[] & IEntityMinBase[]>;
 }
