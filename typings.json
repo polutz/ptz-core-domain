@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "bcryptjs": "registry:dt/bcryptjs#2.4.0+20170109141314",
-    "shortid": "registry:dt/shortid#0.0.0+20160428043022",
     "sinon": "registry:npm/sinon#1.16.0+20160723033700"
   },
   "globalDependencies": {
