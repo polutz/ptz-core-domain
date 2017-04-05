@@ -1,5 +1,11 @@
 ## master
 
+
+## 1.2.0 (April 5, 2017)
+
+* Remove gulp.
+* Add debug support for vs code.
+
 ## 1.1.9 (March 31, 2017)
 
 * Fix IBaseRepository returns for getByIds and find.
