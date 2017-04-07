@@ -1,5 +1,9 @@
 ## master
 
+## 1.2.1 (April 5, 2017)
+
+* Add IBaseApp and IBaseAppArgs.
+* Remove typings.
 
 ## 1.2.0 (April 5, 2017)
 
