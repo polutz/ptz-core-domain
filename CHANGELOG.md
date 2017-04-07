@@ -1,7 +1,7 @@
 ## master
 
 
-## .. (, 2017)
+## 1.2.2 (April 7, 2017)
 
 * Remove babel-node, babel-polyfill, babel-core and ptz-babel-register.
 
