@@ -3,7 +3,7 @@
 
 ## .. (, 2017)
 
-* 
+* Remove babel-node, babel-polyfill, babel-core and ptz-babel-register.
 
 ## 1.2.1 (April 5, 2017)
 
