@@ -1,6 +1,10 @@
 ## master
 
 
+## 1.3.1 (April 13, 2017)
+
+* Use Ilog from ptz-log in IBaseApp.
+
 ## 1.3.0 (April 13, 2017)
 
 * Add ICreatedBy.user: TUser
