@@ -1,7 +1,5 @@
-export interface ICreatedBy {
-    userId: string;
-    userName: string;
-    name: string;
+export interface ICreatedBy<TUser> {
     dtCreated: Date;
     ip: string;
+    user: TUser;
 }

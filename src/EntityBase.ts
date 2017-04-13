@@ -2,12 +2,12 @@ import EntityMinBase from './EntityMinBase';
 import { ICreatedBy } from './ICreatedBy';
 import { IEntityBase, IEntityBaseArgs } from './IEntityBase';
 
-export default class EntityBase extends EntityMinBase implements IEntityBase {
+export default class EntityBase<TUser> extends EntityMinBase implements IEntityBase<TUser> {
 
-    createdBy: ICreatedBy;
+    createdBy: ICreatedBy<TUser>;
     dtChanged: Date;
 
-    constructor(entity: IEntityBaseArgs) {
+    constructor(entity: IEntityBaseArgs<TUser>) {
         if (!entity)
             entity = {};
 

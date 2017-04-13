@@ -12,11 +12,9 @@ describe('EntityBase', function () {
     it('should set createdBy', function () {
         var args = {
             createdBy: {
-                userName: 'allanegidio',
-                name: 'Allan Egidio',
                 dtCreated: new Date(),
                 ip: '192.168.1.1',
-                userId: 'aswwds423432'
+                user: { id: 'test-id' }
             }
         };
         var entity = new _EntityBase2.default(args);

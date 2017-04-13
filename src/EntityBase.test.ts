@@ -4,13 +4,11 @@ import { IEntityBaseArgs } from './IEntityBase';
 
 describe('EntityBase', () => {
     it('should set createdBy', () => {
-        var args: IEntityBaseArgs = {
+        var args: IEntityBaseArgs<any> = {
             createdBy: {
-                userName: 'allanegidio',
-                name: 'Allan Egidio',
                 dtCreated: new Date(),
                 ip: '192.168.1.1',
-                userId: 'aswwds423432'
+                user: { id: 'test-id'}
             }
         };
 
@@ -19,7 +17,7 @@ describe('EntityBase', () => {
     });
 
     it('should set dtChanged', () => {
-        var args: IEntityBaseArgs = {
+        var args: IEntityBaseArgs<any> = {
             dtChanged: new Date()
         };
 

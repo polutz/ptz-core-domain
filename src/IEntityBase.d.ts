@@ -1,12 +1,12 @@
 import { ICreatedBy } from './ICreatedBy';
 import { IEntityMinBase, IEntityMinBaseArgs } from './IEntityMinBase';
 
-export interface IEntityBase extends IEntityMinBase {
-    createdBy?: ICreatedBy;
+export interface IEntityBase<TUser> extends IEntityMinBase {
+    createdBy?: ICreatedBy<TUser>;
     dtChanged?: Date;
 }
 
-export interface IEntityBaseArgs extends IEntityMinBaseArgs {
-    createdBy?: ICreatedBy;
+export interface IEntityBaseArgs<TUser> extends IEntityMinBaseArgs {
+    createdBy?: ICreatedBy<TUser>;
     dtChanged?: Date;
 }
