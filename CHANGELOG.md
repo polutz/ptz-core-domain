@@ -1,6 +1,13 @@
 ## master
 
 
+## 1.3.0 (April 13, 2017)
+
+* Add ICreatedBy.user: TUser
+    By removing the fields name, userId, username from ICreatedBy
+    and creating the prop 'user: TUser'
+    now the user is flexible.
+
 ## 1.2.2 (April 7, 2017)
 
 * Remove babel-node, babel-polyfill, babel-core and ptz-babel-register.
