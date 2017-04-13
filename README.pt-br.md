@@ -7,21 +7,26 @@
 [![bitHound Score](https://www.bithound.io/github/gotwarlost/istanbul/badges/score.svg)](https://www.bithound.io/github/polutz/ptz-core-domain)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
 
-## Translations
+## Traduções
 [pt-br](https://github.com/polutz/ptz-core-domain/blob/master/README.pt-br.md)
 [en-us](https://github.com/polutz/ptz-core-domain/blob/master/README.md)
 
-ptz-core-domain is the core for all Polutz modules.
+Este é o coração do Polutz, conjunto de móludos baseados em DDD (Domain Driven Design) 
+e TDD (Test Driven Development).
+Sinta-se livre para usar em seus projetos, e contribuir!
+
+Nessa camada de Domínio (Domain), a ideia é utilizar o minimo possível de dependências, 
+tentando ficar ao máximo com javascript puro.
 
 
-## Use
+## Como usar
 
-### Install
+### Instalação
 ```
     npm install --save ptz-core-domain
 ```
 
-### How to use
+### Como usar
 ```javascript    
     import {
         validateEmail,
@@ -38,20 +43,19 @@ ptz-core-domain is the core for all Polutz modules.
     } from 'ptz-core-domain';
 ```
 
-
-## Contribute
+## Contribuir com o projeto
 
 ### NPM Global packages
 ```
     npm install -g ts-node babel-cli
 ```
 
-### Setup
+### Instalação
 ```
     npm install   
 ```
 
-### Test
+### Teste
 ```
     npm test
 ```
