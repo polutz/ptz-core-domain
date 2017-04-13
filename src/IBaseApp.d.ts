@@ -1,7 +1,9 @@
+import { Ilog } from 'ptz-log';
+
 export interface IBaseApp {
-    log(...args: any[]): void;
+    log: Ilog;
 }
 
 export interface IBaseAppArgs {
-    log?: (...args: any[]) => void;
+    log?: Ilog;
 }
