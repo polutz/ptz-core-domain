@@ -27,6 +27,7 @@ ptz-core-domain is the core for all Polutz modules.
         validateEmail,
         EntityBase,
         EntityMinBase,
+        IAppFuncArgs,
         ICreatedBy,
         IEntityMinBase,
         IEntityMinBaseArgs,

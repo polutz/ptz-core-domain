@@ -1,6 +1,7 @@
 import { validateEmail } from './Email';
 import EntityBase from './EntityBase';
 import EntityMinBase from './EntityMinBase';
+import { IAppFuncArgs } from './IAppFuncArgs';
 import { IBaseApp, IBaseAppArgs } from './IBaseApp';
 import { IBaseRepository } from './IBaseRepository';
 import { ICreatedBy } from './ICreatedBy';
@@ -11,6 +12,7 @@ export {
     validateEmail,
     EntityBase,
     EntityMinBase,
+    IAppFuncArgs,
     ICreatedBy,
     IEntityMinBase,
     IEntityMinBaseArgs,

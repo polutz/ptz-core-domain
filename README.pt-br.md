@@ -32,6 +32,7 @@ tentando ficar ao máximo com javascript puro.
         validateEmail,
         EntityBase,
         EntityMinBase,
+        IAppFuncArgs,
         ICreatedBy,
         IEntityMinBase,
         IEntityMinBaseArgs,
