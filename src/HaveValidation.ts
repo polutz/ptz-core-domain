@@ -20,7 +20,8 @@ export default class HaveValidation implements IHaveValidation {
     }
 
     addErrors(errors: string[]): void {
-        this.errors = [];
+        if (this.errors == null)
+            this.errors = [];
 
         if (errors == null)
             return;

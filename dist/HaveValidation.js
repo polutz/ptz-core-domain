@@ -27,7 +27,7 @@ var HaveValidation = function () {
         value: function addErrors(errors) {
             var _this = this;
 
-            this.errors = [];
+            if (this.errors == null) this.errors = [];
             if (errors == null) return;
             errors.forEach(function (error) {
                 return _this.addError(error);

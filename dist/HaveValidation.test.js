@@ -31,10 +31,12 @@ describe('HaveValidation', function () {
         it('add 2 errors', function () {
             var error1 = 'ERROR_1';
             var error2 = 'ERROR_2';
-            var entity = new _index.HaveValidation({});
-            entity.addErrors([error1, error2]);
-            (0, _ptzAssert.contains)(entity.errors, error1);
+            var error3 = 'ERROR_3';
+            var entity = new _index.HaveValidation({ errors: [error1] });
+            entity.addErrors([error2, error3]);
+            (0, _ptzAssert.contains)(entity.errors, error1, 'Error from args not added');
             (0, _ptzAssert.contains)(entity.errors, error2);
+            (0, _ptzAssert.contains)(entity.errors, error3);
         });
         it('add no errors', function () {
             var entity = new _index.HaveValidation({});

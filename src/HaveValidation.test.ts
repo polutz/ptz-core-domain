@@ -32,11 +32,14 @@ describe('HaveValidation', () => {
         it('add 2 errors', () => {
             const error1 = 'ERROR_1';
             const error2 = 'ERROR_2';
+            const error3 = 'ERROR_3';
 
-            var entity = new HaveValidation({});
-            entity.addErrors([error1, error2]);
-            contains(entity.errors, error1);
+            var entity = new HaveValidation({ errors: [error1] });
+            entity.addErrors([error2, error3]);
+
+            contains(entity.errors, error1, 'Error from args not added');
             contains(entity.errors, error2);
+            contains(entity.errors, error3);
         });
 
         it('add no errors', () => {
