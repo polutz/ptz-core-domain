@@ -13,14 +13,25 @@ var HaveValidation = function () {
         _classCallCheck(this, HaveValidation);
 
         if (!args) args = {};
-        this.errors = args.errors;
+        this.addErrors(args.errors);
     }
 
     _createClass(HaveValidation, [{
         key: 'addError',
         value: function addError(error) {
-            if (!this.errors) this.errors = [];
+            if (error == null) return;
             if (!(this.errors.indexOf(error) >= 0)) this.errors.push(error);
+        }
+    }, {
+        key: 'addErrors',
+        value: function addErrors(errors) {
+            var _this = this;
+
+            this.errors = [];
+            if (errors == null) return;
+            errors.forEach(function (error) {
+                return _this.addError(error);
+            });
         }
     }, {
         key: 'isValid',

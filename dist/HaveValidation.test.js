@@ -27,6 +27,21 @@ describe('HaveValidation', function () {
             (0, _ptzAssert.containsNTimes)(entity.errors, errorKey, 1);
         });
     });
+    describe('addErrors', function () {
+        it('add 2 errors', function () {
+            var error1 = 'ERROR_1';
+            var error2 = 'ERROR_2';
+            var entity = new _index.HaveValidation({});
+            entity.addErrors([error1, error2]);
+            (0, _ptzAssert.contains)(entity.errors, error1);
+            (0, _ptzAssert.contains)(entity.errors, error2);
+        });
+        it('add no errors', function () {
+            var entity = new _index.HaveValidation({});
+            entity.addErrors(null);
+            (0, _ptzAssert.emptyArray)(entity.errors);
+        });
+    });
     describe('IsValid', function () {
         it('should return true when errors is null', function () {
             var entity = new _index.HaveValidation({ errors: null });

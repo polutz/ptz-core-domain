@@ -1,4 +1,4 @@
-import { contains, containsNTimes, equal, notEmptyString, notOk, ok, throws } from 'ptz-assert';
+import { contains, containsNTimes, emptyArray, equal, notEmptyString, notOk, ok, throws } from 'ptz-assert';
 import { HaveValidation } from './index';
 
 describe('HaveValidation', () => {
@@ -25,6 +25,24 @@ describe('HaveValidation', () => {
             var entity = new HaveValidation({ errors: [errorKey] });
             entity.addError(errorKey);
             containsNTimes(entity.errors, errorKey, 1);
+        });
+    });
+
+    describe('addErrors', () => {
+        it('add 2 errors', () => {
+            const error1 = 'ERROR_1';
+            const error2 = 'ERROR_2';
+
+            var entity = new HaveValidation({});
+            entity.addErrors([error1, error2]);
+            contains(entity.errors, error1);
+            contains(entity.errors, error2);
+        });
+
+        it('add no errors', () => {
+            var entity = new HaveValidation({});
+            entity.addErrors(null);
+            emptyArray(entity.errors);
         });
     });
 

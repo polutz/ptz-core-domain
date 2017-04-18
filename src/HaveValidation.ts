@@ -8,15 +8,24 @@ export default class HaveValidation implements IHaveValidation {
         if (!args)
             args = {};
 
-        this.errors = args.errors;
+        this.addErrors(args.errors);
     }
 
-    addError(error: string) {
-        if (!this.errors)
-            this.errors = [];
+    addError(error: string): void {
+        if (error == null)
+            return;
 
         if (!(this.errors.indexOf(error) >= 0))
             this.errors.push(error);
+    }
+
+    addErrors(errors: string[]): void {
+        this.errors = [];
+
+        if (errors == null)
+            return;
+
+        errors.forEach(error => this.addError(error));
     }
 
     isValid(): boolean {
