@@ -9,6 +9,8 @@ import { ICreatedBy } from './ICreatedBy';
 import { IEntityBase, IEntityBaseArgs } from './IEntityBase';
 import { IEntityMinBase, IEntityMinBaseArgs } from './IEntityMinBase';
 import { IHaveValidation, IHaveValidationArgs } from './IHaveValidation';
+import { IValidate } from './IValidate';
+import { validate } from './Validate';
 
 export {
     validateEmail,
@@ -25,5 +27,7 @@ export {
     IBaseAppArgs,
     HaveValidation,
     IHaveValidation,
-    IHaveValidationArgs
+    IHaveValidationArgs,
+    IValidate,
+    validate
 }
