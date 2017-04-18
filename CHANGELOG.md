@@ -1,6 +1,11 @@
 ## master
 
 
+## 1.3.5 (April 18, 2017)
+
+* Add HaveValidation.addErrors().
+* Add Validate.
+
 ## 1.3.4 (April 18, 2017)
 
 * Add IHaveValidation.
