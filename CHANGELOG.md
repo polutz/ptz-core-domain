@@ -1,6 +1,10 @@
 ## master
 
 
+## 1.3.7 (April 18, 2017)
+
+* Fix HaveValidation.addErrors from cleanning errors.
+
 ## 1.3.6 (April 18, 2017)
 
 * Fix validate: when required and empty string add error.
