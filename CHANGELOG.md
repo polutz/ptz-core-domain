@@ -1,6 +1,10 @@
 ## master
 
 
+## 1.3.6 (April 18, 2017)
+
+* Fix validate: when required and empty string add error.
+
 ## 1.3.5 (April 18, 2017)
 
 * Add HaveValidation.addErrors().
