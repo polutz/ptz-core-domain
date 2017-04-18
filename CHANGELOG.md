@@ -1,6 +1,10 @@
 ## master
 
 
+## 1.3.4 (April 18, 2017)
+
+* Add IHaveValidation.
+
 ## 1.3.3 (April 13, 2017)
 
 * Update ICreatedBy set user as nullable.
