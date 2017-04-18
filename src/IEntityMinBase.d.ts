@@ -1,13 +1,11 @@
-export interface IEntityMinBase {
+import { IHaveValidation, IHaveValidationArgs } from './IHaveValidation';
+
+export interface IEntityMinBase extends IHaveValidation {
     id?: string;
     _id?: string;
-    errors?: string[];
-    isValid(): boolean;
-    throwErrorIfIsInvalid(): void;
 }
 
-export interface IEntityMinBaseArgs {
+export interface IEntityMinBaseArgs extends IHaveValidationArgs {
     id?: string;
     _id?: string;
-    errors?: string[];
 }

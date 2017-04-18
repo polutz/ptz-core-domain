@@ -1,5 +1,5 @@
 import { notOk, ok } from 'ptz-assert';
-import { validateEmail } from './Email';
+import { validateEmail } from './index';
 
 describe('Email', () => {
     it('Valid Email', () => {

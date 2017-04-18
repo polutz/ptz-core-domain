@@ -2,11 +2,7 @@
 
 var _ptzAssert = require('ptz-assert');
 
-var _EntityBase = require('./EntityBase');
-
-var _EntityBase2 = _interopRequireDefault(_EntityBase);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _index = require('./index');
 
 describe('EntityBase', function () {
     it('should set createdBy', function () {
@@ -17,18 +13,18 @@ describe('EntityBase', function () {
                 user: { id: 'test-id' }
             }
         };
-        var entity = new _EntityBase2.default(args);
+        var entity = new _index.EntityBase(args);
         (0, _ptzAssert.equal)(entity.createdBy, args.createdBy);
     });
     it('should set dtChanged', function () {
         var args = {
             dtChanged: new Date()
         };
-        var entity = new _EntityBase2.default(args);
+        var entity = new _index.EntityBase(args);
         (0, _ptzAssert.equal)(entity.dtChanged, args.dtChanged);
     });
     it('should create new Object when null args', function () {
-        var entity = new _EntityBase2.default(null);
+        var entity = new _index.EntityBase(null);
         (0, _ptzAssert.ok)(entity);
     });
 });

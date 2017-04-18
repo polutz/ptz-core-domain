@@ -10,36 +10,33 @@ var _shortid = require('shortid');
 
 var _shortid2 = _interopRequireDefault(_shortid);
 
+var _HaveValidation2 = require('./HaveValidation');
+
+var _HaveValidation3 = _interopRequireDefault(_HaveValidation2);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var EntityMinBase = function () {
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var EntityMinBase = function (_HaveValidation) {
+    _inherits(EntityMinBase, _HaveValidation);
+
     function EntityMinBase(entity) {
         _classCallCheck(this, EntityMinBase);
 
         if (!entity) entity = {};
-        this.setId(entity);
-        this.errors = entity.errors;
+
+        var _this = _possibleConstructorReturn(this, (EntityMinBase.__proto__ || Object.getPrototypeOf(EntityMinBase)).call(this, entity));
+
+        _this.setId(entity);
+        return _this;
     }
 
     _createClass(EntityMinBase, [{
-        key: 'addError',
-        value: function addError(error) {
-            if (!this.errors) this.errors = [];
-            if (!(this.errors.indexOf(error) >= 0)) this.errors.push(error);
-        }
-    }, {
-        key: 'isValid',
-        value: function isValid() {
-            return !this.errors || this.errors.length === 0;
-        }
-    }, {
-        key: 'throwErrorIfIsInvalid',
-        value: function throwErrorIfIsInvalid() {
-            if (this.errors && this.errors.length > 0) throw 'ERROR_INVALID_ENTITY';
-        }
-    }, {
         key: 'setId',
         value: function setId(entity) {
             this.id = entity.id || entity._id;
@@ -48,7 +45,7 @@ var EntityMinBase = function () {
     }]);
 
     return EntityMinBase;
-}();
+}(_HaveValidation3.default);
 //# sourceMappingURL=EntityMinBase.js.map
 
 
