@@ -8,7 +8,7 @@ export interface IValidateArgs {
 }
 
 export function validate(args: IValidateArgs): string[] {
-    if (args.data == null) {
+    if (args.data == null || args.data.length === 0) {
         if (args.requiredError)
             return [args.requiredError];
         else

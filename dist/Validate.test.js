@@ -16,9 +16,14 @@ describe('validate', function () {
             var errors = (0, _index.validate)({ data: undefined, requiredError: error });
             (0, _ptzAssert.contains)(errors, error);
         });
-        it('when not null do not return required error', function () {
+        it('when empty return required error', function () {
             var error = 'ERROR_REQUIRED';
             var errors = (0, _index.validate)({ data: '', requiredError: error });
+            (0, _ptzAssert.contains)(errors, error);
+        });
+        it('when not empty do not return required error', function () {
+            var error = 'ERROR_REQUIRED';
+            var errors = (0, _index.validate)({ data: 'HI!', requiredError: error });
             (0, _ptzAssert.notContains)(errors, error);
         });
     });

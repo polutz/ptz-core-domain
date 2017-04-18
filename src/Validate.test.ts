@@ -15,9 +15,15 @@ describe('validate', () => {
             contains(errors, error);
         });
 
-        it('when not null do not return required error', () => {
+        it('when empty return required error', () => {
             const error = 'ERROR_REQUIRED';
             const errors = validate({ data: '', requiredError: error });
+            contains(errors, error);
+        });
+
+        it('when not empty do not return required error', () => {
+            const error = 'ERROR_REQUIRED';
+            const errors = validate({ data: 'HI!', requiredError: error });
             notContains(errors, error);
         });
     });
