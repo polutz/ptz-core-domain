@@ -1,5 +1,5 @@
 import { equal, ok } from 'ptz-assert';
-import { EntityBase, IEntityBaseArgs } from './index';
+import { EntityBase, IEntityBaseArgs } from '../index';
 
 describe('EntityBase', () => {
     it('should set createdBy', () => {

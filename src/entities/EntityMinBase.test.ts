@@ -1,5 +1,5 @@
 import { contains, containsNTimes, equal, notEmptyString, notOk, ok, throws } from 'ptz-assert';
-import { EntityMinBase } from './index';
+import { EntityMinBase } from '../index';
 
 describe('EntityMinBase', () => {
 

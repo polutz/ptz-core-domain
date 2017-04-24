@@ -1,4 +1,4 @@
-import { IHaveValidation, IHaveValidationArgs } from './IHaveValidation';
+import { IHaveValidation, IHaveValidationArgs } from 'ptz-validations';
 
 export interface IEntityMinBase extends IHaveValidation {
     id?: string;

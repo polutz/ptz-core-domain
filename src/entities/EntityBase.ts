@@ -1,5 +1,5 @@
+import { ICreatedBy } from '../ICreatedBy';
 import EntityMinBase from './EntityMinBase';
-import { ICreatedBy } from './ICreatedBy';
 import { IEntityBase, IEntityBaseArgs } from './IEntityBase';
 
 export default class EntityBase<TUser> extends EntityMinBase implements IEntityBase<TUser> {

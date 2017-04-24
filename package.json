@@ -8,7 +8,7 @@
     "lint": "tslint ./src/**/*.ts ./src/**/*.test.ts ./src/**/*.d.ts",
     "js": "tsc && babel dist -d dist --presets es2015",
     "pretest": "npm-run-all --parallel js lint",
-    "mocha": "mocha ./dist/**/*.js",
+    "mocha": "mocha ./dist/**/*.js --require babel-polyfill",
     "test": "nyc npm run mocha && nyc report --reporter=text-lcov > coverage.lcov && codecov --token=cbef0920-fdc4-4cc3-8d52-51a0298afea3",
     "predebug": "npm run pretest",
     "debug": "node --nolazy --debug-brk=5858 dist/index.js"
@@ -43,6 +43,7 @@
   },
   "dependencies": {
     "ptz-log": "^1.0.0",
+    "ptz-validations": "^1.0.0",
     "shortid": "^2.2.6"
   }
 }

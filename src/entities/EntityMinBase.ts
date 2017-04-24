@@ -1,5 +1,5 @@
+import { HaveValidation } from 'ptz-validations';
 import shortid from 'shortid';
-import HaveValidation from './HaveValidation';
 import { IEntityMinBase, IEntityMinBaseArgs } from './IEntityMinBase';
 
 export default class EntityMinBase extends HaveValidation implements IEntityMinBase {
