@@ -1,6 +1,10 @@
 ## master
 
 
+## 1.4.0 (April 24, 2017)
+
+* Move validations to ptz-validations.
+
 ## 1.3.7 (April 18, 2017)
 
 * Fix HaveValidation.addErrors from cleanning errors.
