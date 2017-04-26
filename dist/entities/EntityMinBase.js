@@ -48,3 +48,4 @@ var EntityMinBase = function (_HaveValidation) {
 
 
 exports.default = EntityMinBase;
+//# sourceMappingURL=EntityMinBase.js.map

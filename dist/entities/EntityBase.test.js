@@ -29,3 +29,4 @@ describe('EntityBase', function () {
     });
 });
 //# sourceMappingURL=EntityBase.test.js.map
+//# sourceMappingURL=EntityBase.test.js.map

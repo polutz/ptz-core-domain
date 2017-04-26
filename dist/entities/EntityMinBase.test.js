@@ -23,3 +23,4 @@ describe('EntityMinBase', function () {
     });
 });
 //# sourceMappingURL=EntityMinBase.test.js.map
+//# sourceMappingURL=EntityMinBase.test.js.map

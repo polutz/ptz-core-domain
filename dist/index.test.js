@@ -6,6 +6,8 @@ var _index = require('./index');
 
 describe('ptz-core-domain', function () {
     describe('exports', function () {
+        // TODO: Actions after ptz-validations
+        // it('Action', () => ok(ActionExecution));
         it('EntityBase', function () {
             return (0, _ptzAssert.ok)(_index.EntityBase);
         });
@@ -14,4 +16,5 @@ describe('ptz-core-domain', function () {
         });
     });
 });
+//# sourceMappingURL=index.test.js.map
 //# sourceMappingURL=index.test.js.map
