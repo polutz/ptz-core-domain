@@ -1,6 +1,10 @@
 ## master
 
 
+## 1.5.0 (April 25, 2017)
+
+* Rename IAppFuncArgs.createdBy to authedUser.
+
 ## 1.4.0 (April 24, 2017)
 
 * Move validations to ptz-validations.
