@@ -1,6 +1,11 @@
 ## master
 
 
+## 1.5.1 (April 28, 2017)
+
+* Transpiling Typescript to esnext.
+* Add test for ***new EntityMinBase(null)*** with null args.
+
 ## 1.5.0 (April 25, 2017)
 
 * Rename IAppFuncArgs.createdBy to authedUser.
