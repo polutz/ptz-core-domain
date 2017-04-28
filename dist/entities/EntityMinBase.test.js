@@ -20,6 +20,10 @@ describe('EntityMinBase', function () {
             var entity = new _index.EntityMinBase({ id: id });
             (0, _ptzAssert.equal)(entity.id, id);
         });
+        it('Generate Id when null object', function () {
+            var entity = new _index.EntityMinBase(null);
+            (0, _ptzAssert.notEmptyString)(entity.id);
+        });
     });
 });
 //# sourceMappingURL=EntityMinBase.test.js.map

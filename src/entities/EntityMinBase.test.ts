@@ -20,5 +20,10 @@ describe('EntityMinBase', () => {
             const entity = new EntityMinBase({ id });
             equal(entity.id, id);
         });
+
+        it('Generate Id when null object', () => {
+            const entity = new EntityMinBase(null);
+            notEmptyString(entity.id);
+        });
     });
 });
