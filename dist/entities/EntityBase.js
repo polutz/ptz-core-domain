@@ -3,12 +3,9 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
+exports.EntityBase = undefined;
 
 var _EntityMinBase2 = require('./EntityMinBase');
-
-var _EntityMinBase3 = _interopRequireDefault(_EntityMinBase2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -16,7 +13,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var EntityBase = function (_EntityMinBase) {
+var EntityBase = exports.EntityBase = function (_EntityMinBase) {
     _inherits(EntityBase, _EntityMinBase);
 
     function EntityBase(entity) {
@@ -32,9 +29,6 @@ var EntityBase = function (_EntityMinBase) {
     }
 
     return EntityBase;
-}(_EntityMinBase3.default);
+}(_EntityMinBase2.EntityMinBase);
 //# sourceMappingURL=EntityBase.js.map
-
-
-exports.default = EntityBase;
 //# sourceMappingURL=EntityBase.js.map

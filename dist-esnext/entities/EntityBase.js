@@ -1,5 +1,5 @@
-import EntityMinBase from './EntityMinBase';
-export default class EntityBase extends EntityMinBase {
+import { EntityMinBase } from './EntityMinBase';
+export class EntityBase extends EntityMinBase {
     constructor(entity) {
         if (!entity)
             entity = {};

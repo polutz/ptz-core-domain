@@ -6,15 +6,6 @@ import {
     EntityMinBase,
     // TODO: Actions after ptz-validations
     // IAction, IActionExecution, IActionExecutionArgs,
-    IAppFuncArgs,
-    IBaseApp,
-    IBaseAppArgs,
-    IBaseRepository,
-    ICreatedBy,
-    IEntityBase,
-    IEntityBaseArgs,
-    IEntityMinBase,
-    IEntityMinBaseArgs
 } from './index';
 
 describe('ptz-core-domain', () => {

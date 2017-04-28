@@ -5,11 +5,12 @@
     "noImplicitAny": false,
     "removeComments": false,
     "preserveConstEnums": true,
-    "target": "ES6",
+    "target": "esnext",
     "sourceMap": true,
     "listFiles": false,
-    "outDir": "dist-es6/",
-    "allowSyntheticDefaultImports": true
+    "outDir": "dist-esnext/",
+    "allowSyntheticDefaultImports": true,
+    "noUnusedLocals": true
   },
   "include": [
     "src/**/*.d.ts",

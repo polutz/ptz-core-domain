@@ -1,6 +1,6 @@
 import { HaveValidation } from 'ptz-validations';
 import shortid from 'shortid';
-export default class EntityMinBase extends HaveValidation {
+export class EntityMinBase extends HaveValidation {
     constructor(entity) {
         if (!entity)
             entity = {};

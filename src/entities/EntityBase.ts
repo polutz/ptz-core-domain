@@ -1,8 +1,8 @@
 import { ICreatedBy } from '../ICreatedBy';
-import EntityMinBase from './EntityMinBase';
+import { EntityMinBase } from './EntityMinBase';
 import { IEntityBase, IEntityBaseArgs } from './IEntityBase';
 
-export default class EntityBase<TUser> extends EntityMinBase implements IEntityBase<TUser> {
+export class EntityBase<TUser> extends EntityMinBase implements IEntityBase<TUser> {
 
     createdBy: ICreatedBy<TUser>;
     dtChanged: Date;
