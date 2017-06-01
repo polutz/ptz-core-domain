@@ -1,9 +1,9 @@
-import { Ilog } from 'ptz-log';
+import { ILog } from 'ptz-log';
 
 export interface IBaseApp {
-    log: Ilog;
+    log: ILog;
 }
 
 export interface IBaseAppArgs {
-    log?: Ilog;
+    log?: ILog;
 }

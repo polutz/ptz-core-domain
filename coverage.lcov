@@ -1,5 +1,5 @@
 TN:
-SF:/projects/polutz/ptz-core-domain/dist-esnext/entities/EntityBase.js
+SF:/home/angeloocana/dev/polutz/ptz-core-domain/dist-esnext/entities/EntityBase.js
 FN:3,EntityBase
 FNF:1
 FNH:1
@@ -20,7 +20,7 @@ BRF:4
 BRH:3
 end_of_record
 TN:
-SF:/projects/polutz/ptz-core-domain/dist-esnext/entities/EntityMinBase.js
+SF:/home/angeloocana/dev/polutz/ptz-core-domain/dist-esnext/entities/EntityMinBase.js
 FN:4,EntityMinBase
 FNF:1
 FNH:1
