@@ -1,6 +1,6 @@
 {
   "name": "ptz-core-domain",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Polutz Core Domain.",
   "main": "./dist/index.js",
   "typings": "./src/index.ts",

@@ -1,6 +1,10 @@
 ## master
 
 
+## 1.5.2 (June 1, 2017)
+
+* Update ptz-log.
+
 ## 1.5.1 (April 28, 2017)
 
 * Transpiling Typescript to esnext.
