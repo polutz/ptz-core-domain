@@ -1,4 +1,4 @@
-import { IEntityMinBase } from './entities/IEntityMinBase';
+import { IEntityMinBase } from './IEntityMinBase';
 
 interface IBaseRepository<T> {
     collectionName: string;

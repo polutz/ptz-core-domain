@@ -4,7 +4,7 @@
       "appname": "ptz-core-domain",
       "githubAuthor": "polutz",
       "runNpmInstall": true,
-      "codecovToken": ""
+      "codecovToken": "cbef0920-fdc4-4cc3-8d52-51a0298afea3"
     }
   },
   "generator-ptz-domain": {

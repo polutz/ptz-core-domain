@@ -4,21 +4,15 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _EntityBase = require('./entities/EntityBase');
+var _generateId = require('./generateId');
 
-Object.defineProperty(exports, 'EntityBase', {
-  enumerable: true,
-  get: function get() {
-    return _EntityBase.EntityBase;
-  }
-});
-
-var _EntityMinBase = require('./entities/EntityMinBase');
-
-Object.defineProperty(exports, 'EntityMinBase', {
-  enumerable: true,
-  get: function get() {
-    return _EntityMinBase.EntityMinBase;
-  }
+Object.keys(_generateId).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _generateId[key];
+    }
+  });
 });
 //# sourceMappingURL=index.js.map

@@ -10,9 +10,11 @@
     "pretest": "npm-run-all --parallel js lint",
     "mocha": "mocha ./dist/**/*.js --require babel-polyfill",
     "test": "nyc npm run mocha && nyc report --reporter=html --reporter=text-lcov > coverage.lcov && f() { EXIT=0; codecov --token=cbef0920-fdc4-4cc3-8d52-51a0298afea3 || exit $EXIT; }; f",
-    "test:cover": "npm run test && opn ./coverage/lcov-report/index.html",
+    "test:cover": "npm run test && opn ./coverage/index.html",
     "predebug": "npm run pretest",
-    "debug": "node --nolazy --debug-brk=5858 dist/index.js"
+    "debug": "node --nolazy --debug-brk=5858 dist/index.js",
+    "docs:build": "typedoc --out ./docs ./ --includeDeclarations --excludeExternals --exclude '**/*.test.ts'",
+    "docs": "npm run docs:build && opn ./docs/index.html"
   },
   "repository": {
     "type": "git",
@@ -41,22 +43,17 @@
     "typescript": "^2.2.2",
     "@types/mocha": "^2.2.40",
     "@types/node": "^7.0.12",
+    "typedoc": "^0.6.0",
     "opn-cli": "^3.1.0",
     "@types/shortid": "0.0.28"
   },
   "dependencies": {
+    "@types/ramda": "0.0.10",
     "ptz-core-domain": "^1.3.3",
+    "ptz-fp": "^1.1.0",
     "ptz-log": "^1.1.0",
-    "ptz-validations": "^1.0.0",
+    "ptz-validations": "^2.0.0",
+    "ramda": "^0.24.0",
     "shortid": "^2.2.6"
-  },
-  "scriptsBK": {
-    "lint": "tslint ./src/**/*.ts ./src/**/*.test.ts ./src/**/*.d.ts",
-    "js": "tsc && babel dist -d dist --presets es2015",
-    "pretest": "npm-run-all --parallel js lint",
-    "mocha": "mocha ./dist/**/*.js --require babel-polyfill",
-    "test": "nyc npm run mocha && nyc report --reporter=text-lcov > coverage.lcov && codecov --token=cbef0920-fdc4-4cc3-8d52-51a0298afea3",
-    "predebug": "npm run pretest",
-    "debug": "node --nolazy --debug-brk=5858 dist/index.js"
   }
 }

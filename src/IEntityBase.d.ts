@@ -1,4 +1,4 @@
-import { ICreatedBy } from '../ICreatedBy';
+import { ICreatedBy } from './ICreatedBy';
 import { IEntityMinBase, IEntityMinBaseArgs } from './IEntityMinBase';
 
 export interface IEntityBase<TUser> extends IEntityMinBase {
