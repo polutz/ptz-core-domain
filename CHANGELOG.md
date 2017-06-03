@@ -1,6 +1,10 @@
 ## master
 
 
+## 2.0.0 (June 3, 2017)
+
+* Complete rewrite to Functional Programming.
+
 ## 1.5.2 (June 1, 2017)
 
 * Update ptz-log.
