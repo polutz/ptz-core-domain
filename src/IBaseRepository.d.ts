@@ -1,10 +1,11 @@
+import { Collection, Db } from 'mongodb';
 import { IEntityMinBase } from './IEntityMinBase';
 
 interface IBaseRepository<T> {
     collectionName: string;
-    db;
+    db: Db;
 
-    getDbCollection();
+    getDbCollection(db: Db, collectionName: string): Collection<T & IEntityMinBase>;
 
     save(entity: T & IEntityMinBase): Promise<T & IEntityMinBase>;
 

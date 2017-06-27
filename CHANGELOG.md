@@ -1,6 +1,11 @@
 ## master
 
 
+## 2.0.1 (June 26, 2017)
+
+* Add index tests.
+* Add @types/mongodb to project.
+
 ## 2.0.0 (June 3, 2017)
 
 * Complete rewrite to Functional Programming.
