@@ -52,7 +52,7 @@
     "@types/mongodb": "^2.2.6",
     "ptz-fp": "^1.1.0",
     "ptz-log": "^1.1.0",
-    "@alanmarcell/ptz-validations": "0.0.0",
+    "@alanmarcell/ptz-validations": "0.0.1",
     "ramda": "^0.24.0",
     "shortid": "^2.2.6"
   }
