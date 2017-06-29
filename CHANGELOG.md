@@ -1,5 +1,8 @@
 ## master
 
+## ... (June 26, 2017)
+
+* Remove IBaseApp
 
 ## 2.0.1 (June 26, 2017)
 

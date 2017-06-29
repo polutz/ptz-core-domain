@@ -2,15 +2,6 @@
 # yarn lockfile v1
 
 
-"@alanmarcell/ptz-validations@0.0.0":
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/@alanmarcell/ptz-validations/-/ptz-validations-0.0.0.tgz#378a9d87317ca86115557d3a73cfcff8cd0cd9f4"
-  dependencies:
-    ptz-fp "^1.0.1"
-    ptz-log "^1.1.0"
-    ramda "^0.24.1"
-    shortid "^2.2.8"
-
 "@types/bson@*":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@types/bson/-/bson-1.0.3.tgz#6c26f0876bf9d8cbb06edd4019e29354bf3a03e0"
@@ -54,9 +45,9 @@
     "@types/bson" "*"
     "@types/node" "*"
 
-"@types/node@*", "@types/node@^7.0.12":
-  version "7.0.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-7.0.14.tgz#1470fa002a113316ac9d9ad163fc738c7a0de2a4"
+"@types/node@*", "@types/node@^8.0.6":
+  version "8.0.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.6.tgz#ed2c3e011cb51ccd3cf874989130f1b9ffe06069"
 
 "@types/ramda@0.0.10":
   version "0.0.10"
@@ -2337,6 +2328,15 @@ ptz-log@^1.0.0, ptz-log@^1.1.0:
   resolved "https://registry.yarnpkg.com/ptz-log/-/ptz-log-1.1.0.tgz#a5f81680da30e491e49c6a6022ec4972506d473b"
   dependencies:
     moment "^2.18.1"
+
+ptz-validations@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/ptz-validations/-/ptz-validations-3.0.1.tgz#2dde5ee3669b41baf3704fc952d1d7fb5b427218"
+  dependencies:
+    ptz-fp "^1.0.1"
+    ptz-log "^1.1.0"
+    ramda "^0.24.1"
+    shortid "^2.2.8"
 
 punycode@^1.4.1:
   version "1.4.1"

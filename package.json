@@ -1,6 +1,6 @@
 {
-  "name": "@alanmarcell/ptz-core-domain",
-  "version": "0.0.1",
+  "name": "ptz-core-domain",
+  "version": "2.0.1",
   "description": "Polutz Core Domain.",
   "main": "./dist/index.js",
   "typings": "./src/index.ts",
@@ -28,7 +28,8 @@
   "homepage": "https://github.com/polutz/ptz-core-domain#readme",
   "devDependencies": {
     "@types/mocha": "^2.2.40",
-    "@types/node": "^7.0.12",
+    "@types/mongodb": "^2.2.6",
+    "@types/node": "^8.0.6",
     "@types/ramda": "0.0.10",
     "@types/shortid": "0.0.28",
     "babel-cli": "^6.24.1",
@@ -49,10 +50,9 @@
     "typescript": "^2.3.4"
   },
   "dependencies": {
-    "@types/mongodb": "^2.2.6",
     "ptz-fp": "^1.1.0",
     "ptz-log": "^1.1.0",
-    "@alanmarcell/ptz-validations": "0.0.1",
+    "ptz-validations": "3.0.1",
     "ramda": "^0.24.0",
     "shortid": "^2.2.6"
   }
