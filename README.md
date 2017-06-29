@@ -1,5 +1,6 @@
 # ptz-core-domain
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0b3a917c0cb9433cb12eec33b989c723)](https://www.codacy.com/app/polutz/ptz-core-domain?utm_source=github.com&utm_medium=referral&utm_content=polutz/ptz-core-domain&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/polutz/ptz-core-domain.svg)](https://travis-ci.org/polutz/ptz-core-domain)
 [![NPM](https://img.shields.io/npm/v/ptz-core-domain.svg)](https://www.npmjs.com/package/ptz-core-domain)
 [![codecov.io](http://codecov.io/github/polutz/ptz-core-domain/coverage.svg)](http://codecov.io/github/polutz/ptz-core-domain)
