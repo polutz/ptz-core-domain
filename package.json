@@ -1,6 +1,6 @@
 {
-  "name": "ptz-core-domain",
-  "version": "2.0.1",
+  "name": "@alanmarcell/ptz-core-domain",
+  "version": "0.0.1",
   "description": "Polutz Core Domain.",
   "main": "./dist/index.js",
   "typings": "./src/index.ts",
@@ -34,25 +34,25 @@
     "babel-cli": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2017": "^6.24.1",
-    "codecov": "^1.0.1",
+    "codecov": "^2.2.0",
     "istanbul": "^0.4.5",
-    "mocha": "^3.2.0",
+    "mocha": "^3.4.2",
     "mocha-lcov-reporter": "^1.3.0",
     "npm-run-all": "^4.0.2",
-    "nyc": "^10.2.0",
+    "nyc": "^11.0.2",
     "opn-cli": "^3.1.0",
-    "ptz-assert": "^1.6.5",
+    "ptz-assert": "^1.6.8",
     "rimraf": "^2.6.1",
-    "sinon": "^1.17.7",
-    "tslint": "^4.5.1",
-    "typedoc": "^0.6.0",
-    "typescript": "^2.2.2"
+    "sinon": "^2.3.5",
+    "tslint": "^5.4.3",
+    "typedoc": "^0.7.1",
+    "typescript": "^2.3.4"
   },
   "dependencies": {
     "@types/mongodb": "^2.2.6",
     "ptz-fp": "^1.1.0",
     "ptz-log": "^1.1.0",
-    "ptz-validations": "^2.0.0",
+    "@alanmarcell/ptz-validations": "0.0.1",
     "ramda": "^0.24.0",
     "shortid": "^2.2.6"
   }
