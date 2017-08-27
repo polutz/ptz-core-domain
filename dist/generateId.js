@@ -24,15 +24,15 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 /**
  * Generate Id with custom function.
  */
-var generateIdWith = exports.generateIdWith = _ramda2.default.curry(function (genId, o) {
+const generateIdWith = exports.generateIdWith = _ramda2.default.curry((genId, o) => {
     if (!o) return { id: genId() };
     if (P.isNotNilOrEmpty(o.id)) return o;
-    var id = P.isNotNilOrEmpty(o._id) ? o._id : genId();
+    const id = P.isNotNilOrEmpty(o._id) ? o._id : genId();
     return _ramda2.default.assoc('id', id, o);
 });
 /**
  * Generate Id if .id and ._id are null or undefined.
  */
-var generateId = exports.generateId = generateIdWith(_shortid2.default.generate);
+const generateId = exports.generateId = generateIdWith(_shortid2.default.generate);
 //# sourceMappingURL=generateId.js.map
 //# sourceMappingURL=generateId.js.map
