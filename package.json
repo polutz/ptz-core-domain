@@ -1,6 +1,6 @@
 {
   "name": "ptz-core-domain",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "Polutz Core Domain.",
   "main": "./dist/index.js",
   "typings": "./src/index.ts",
@@ -47,11 +47,9 @@
   "dependencies": {
     "@types/mongodb": "^2.2.10",
     "@types/node": "^8.0.25",
-    "@types/ramda": "0.24.7",
     "@types/shortid": "0.0.29",
     "ptz-fp": "^1.2.0",
-    "ptz-log": "^1.1.0",
-    "ptz-validations": "3.0.1",
+    "ptz-validations": "^3.0.1",
     "ramda": "^0.24.1",
     "shortid": "^2.2.8"
   }

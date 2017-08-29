@@ -1,6 +1,10 @@
 import { Collection, Db } from 'mongodb';
 import { IEntityMinBase } from './IEntityMinBase';
 
+type ICreateRepository = <T>(url: string, collectionName: string) => Promise<IBaseRepository<IEntityMinBase & T>>;
+
+type IGetDbCollection = <T>(db: Db, collectionName: string) => Collection<T>;
+
 interface IBaseRepository<T> {
     collectionName: string;
     db: Db;
